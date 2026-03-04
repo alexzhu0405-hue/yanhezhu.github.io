@@ -52,3 +52,31 @@ body {
     radial-gradient(at 80% 10%, rgba(240, 147, 251, 0.10) 0px, transparent 50%),
     radial-gradient(at 50% 80%, rgba(79, 172, 254, 0.08) 0px, transparent 50%);
 }
+
+.avatar-glow {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+  animation: orb-float 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.orb-1 { animation-delay: 0s; }
+.orb-2 { animation-delay: -2s; }
+.orb-3 { animation-delay: -4s; }
+
+@keyframes orb-float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  33% { transform: translateY(-20px) translateX(10px); }
+  66% { transform: translateY(10px) translateX(-15px); }
+}
