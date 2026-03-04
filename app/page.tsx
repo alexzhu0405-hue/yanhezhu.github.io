@@ -1,65 +1,69 @@
-import Image from "next/image";
+import Card from "@/app/components/Card";
+import { cases } from "@/lib/cases";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="mx-auto max-w-5xl px-6">
+      {/* Hero */}
+      <section className="pb-16 pt-24 sm:pt-32">
+        <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
+          Yanhe Zhu / 朱彦和
+        </h1>
+        <p className="mt-4 text-xl text-neutral-600">
+          AI 产品经理 / AI 产品实习
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["需求洞察", "AI 能力产品化", "数据闭环与增长"].map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-neutral-300 px-4 py-1.5 text-sm text-neutral-700"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              {tag}
+            </span>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+
+      {/* 精选案例 */}
+      <section className="pb-16">
+        <h2 className="text-2xl font-semibold text-neutral-900">精选案例</h2>
+        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {cases.map((c) => (
+            <Card
+              key={c.slug}
+              href={`/cases/${c.slug}`}
+              title={c.title}
+              summary={c.summary}
+              tags={c.highlights}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          ))}
         </div>
-      </main>
+      </section>
+
+      {/* 经历概览 */}
+      <section className="pb-20">
+        <h2 className="text-2xl font-semibold text-neutral-900">经历概览</h2>
+        <ul className="mt-6 space-y-4 text-neutral-600">
+          <li className="flex items-start gap-3">
+            <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-neutral-400" />
+            <span>
+              <strong className="text-neutral-900">Duke University</strong> — 电气与计算机工程硕士（ECE M.Eng.），专注 AI/ML 方向
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-neutral-400" />
+            <span>
+              产品与 AI 项目经验：从需求分析、方案设计到数据驱动迭代，覆盖智能补货、Agentic RAG 等方向
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-neutral-400" />
+            <span>
+              影像/显示质量相关经历：具备图像信号处理与显示技术背景，能将技术能力转化为产品语言
+            </span>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 }
