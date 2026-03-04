@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Card from "@/app/components/Card";
 import { cases } from "@/lib/cases";
 
@@ -12,19 +13,36 @@ export default function Home() {
     <div className="mx-auto max-w-5xl px-6">
       {/* Hero */}
       <section className="pb-20 pt-20 sm:pt-28">
-        <div className="hero-gradient inline-block rounded-2xl px-5 py-2 text-sm font-medium text-white shadow-lg shadow-purple-500/25 mb-6">
-          AI Product Manager
+        <div className="flex flex-col items-start gap-8 sm:flex-row sm:items-center">
+          {/* Avatar */}
+          <div className="relative shrink-0">
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 opacity-75 blur-sm" />
+            <Image
+              src="/avatar.png"
+              alt="朱彦和"
+              width={120}
+              height={120}
+              priority
+              className="relative rounded-full border-2 border-white shadow-xl"
+            />
+          </div>
+
+          <div>
+            <div className="hero-gradient inline-block rounded-2xl px-5 py-2 text-sm font-medium text-white shadow-lg shadow-purple-500/25 mb-4">
+              AI Product Manager
+            </div>
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
+                Yanhe Zhu
+              </span>
+              <br />
+              <span className="text-gray-900">朱彦和</span>
+            </h1>
+            <p className="mt-4 text-xl text-gray-500">
+              AI 产品经理 / AI 产品实习
+            </p>
+          </div>
         </div>
-        <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-          <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
-            Yanhe Zhu
-          </span>
-          <br />
-          <span className="text-gray-900">朱彦和</span>
-        </h1>
-        <p className="mt-5 text-xl text-gray-500">
-          AI 产品经理 / AI 产品实习
-        </p>
 
         {/* Skill pills */}
         <div className="mt-8 flex flex-wrap gap-4">
