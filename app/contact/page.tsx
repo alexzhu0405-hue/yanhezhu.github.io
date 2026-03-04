@@ -5,8 +5,8 @@ export const metadata = {
 const contacts = [
   {
     label: "邮箱",
-    value: "your@email.com",
-    href: "mailto:your@email.com",
+    value: "1412224226@qq.com",
+    href: "mailto:1412224226@qq.com",
     icon: "✉️",
     color: "from-purple-500 to-indigo-500",
   },
@@ -19,8 +19,8 @@ const contacts = [
   },
   {
     label: "GitHub",
-    value: "github.com/yourprofile",
-    href: "https://github.com/yourprofile",
+    value: "github.com/alexzhu0405-hue",
+    href: "https://github.com/alexzhu0405-hue",
     icon: "💻",
     color: "from-pink-500 to-rose-500",
   },

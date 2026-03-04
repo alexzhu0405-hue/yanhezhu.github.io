@@ -39,7 +39,7 @@ export default function Home() {
               <span className="text-gray-900">朱彦和</span>
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              AI 产品经理 / AI 产品实习
+              AI 产品经理 · Duke ECE · 产品 × 技术双视角
             </p>
           </div>
         </div>
@@ -90,19 +90,45 @@ export default function Home() {
               color: "from-purple-500 to-indigo-500",
               text: (
                 <>
-                  <strong className="text-gray-900">Duke University</strong> — 电气与计算机工程硕士（ECE M.Eng.），专注 AI/ML 方向
+                  <strong className="text-gray-900">杜克大学</strong> — 机器学习与大数据硕士（GPA 4.0/4.0），主修 ML、深度学习、科技产品管理
                 </>
               ),
             },
             {
-              icon: "💡",
-              color: "from-pink-500 to-rose-500",
-              text: "产品与 AI 项目经验：从需求分析、方案设计到数据驱动迭代，覆盖智能补货、Agentic RAG 等方向",
+              icon: "🎓",
+              color: "from-indigo-500 to-blue-500",
+              text: (
+                <>
+                  <strong className="text-gray-900">重庆大学</strong> — 影视摄影与制作 + 计算机科学与技术双学位（GPA 3.8，专排第 1）
+                </>
+              ),
             },
             {
-              icon: "📷",
+              icon: "📱",
+              color: "from-pink-500 to-rose-500",
+              text: (
+                <>
+                  <strong className="text-gray-900">深圳传音控股</strong> — 影像开发部实习，参与构建显示图像质量评估体系，将测试结论转化为产品建议
+                </>
+              ),
+            },
+            {
+              icon: "🚦",
+              color: "from-teal-500 to-emerald-500",
+              text: (
+                <>
+                  <strong className="text-gray-900">江苏交通控股</strong> — 产品设计实习，完成需求分析、交互设计与跨部门评审推动
+                </>
+              ),
+            },
+            {
+              icon: "🔬",
               color: "from-blue-500 to-cyan-500",
-              text: "影像/显示质量相关经历：具备图像信号处理与显示技术背景，能将技术能力转化为产品语言",
+              text: (
+                <>
+                  <strong className="text-gray-900">杜克 IoT 实验室 & 清华 AIR 实验室</strong> — AR 记忆智能体、自动驾驶 3D 场景重建研究
+                </>
+              ),
             },
           ].map((item, i) => (
             <div key={i} className="glass flex items-start gap-4 rounded-2xl p-5 transition-all hover:shadow-md">

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 py-10 text-sm text-gray-400 sm:flex-row sm:justify-between">
         <p>&copy; {new Date().getFullYear()} Yanhe Zhu. All rights reserved.</p>
         <div className="flex items-center gap-5">
-          <a href="mailto:your@email.com" className="transition-colors hover:text-purple-500">
+          <a href="mailto:1412224226@qq.com" className="transition-colors hover:text-purple-500">
             邮箱
           </a>
           <a
@@ -18,7 +18,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/alexzhu0405-hue"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-purple-500"

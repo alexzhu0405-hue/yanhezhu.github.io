@@ -6,25 +6,32 @@ export const metadata = {
 
 const projects = [
   {
-    title: "AlignRAG 研究原型",
+    title: "AR 记忆智能体",
     summary:
-      "基于 LangChain + FAISS 构建的学术论文 Agentic RAG 系统原型，支持子问题拆解、观点图谱可视化与引用溯源。",
-    tags: ["Python", "LangChain", "RAG"],
-    href: "https://github.com/yourprofile/alignrag",
+      "杜克大学 IoT 实验室研究项目：分层语义压缩 + 两阶段检索架构，实现 AR 眼镜端高效长时记忆问答。",
+    tags: ["Python", "LLM", "Edge Computing"],
+    href: "/cases/ar-memory",
   },
   {
-    title: "显示质量自动评测工具",
+    title: "自动驾驶 3D 场景重建",
     summary:
-      "图像信号处理 pipeline：自动化 Gamma、色准、亮度均匀性等指标检测，输出标准化测试报告。",
-    tags: ["Python", "OpenCV", "ISP"],
-    href: "https://github.com/yourprofile/display-quality",
+      "清华 AIR 实验室：引入双边网格与相机特定训练策略优化 OmniRe，Chamfer Distance 误差降低约 35%。",
+    tags: ["Python", "3D Reconstruction", "LiDAR"],
+    href: "https://github.com/yourprofile",
+  },
+  {
+    title: "3D 人体姿态行为分析系统",
+    summary:
+      "基于三维人体姿态估计 + 大模型接口，将时序姿态信号转化为可解释的运动行为语义，辅助运动复盘分析。",
+    tags: ["Python", "Node.js", "LLM"],
+    href: "https://github.com/yourprofile",
   },
   {
     title: "个人作品集网站",
     summary:
-      "你正在浏览的这个网站——使用 Next.js App Router + Tailwind CSS 构建，部署于 GitHub Pages。",
+      "你正在浏览的这个网站——Next.js App Router + Tailwind CSS，iOS 风格设计，部署于 GitHub Pages。",
     tags: ["Next.js", "TypeScript", "Tailwind"],
-    href: "https://github.com/yourprofile/portfolio",
+    href: "https://github.com/alexzhu0405-hue/yanhezhu.github.io",
   },
 ];
 
@@ -35,7 +42,7 @@ export default function ProjectsPage() {
         <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">项目</span>
       </h1>
       <p className="mt-3 text-gray-500">
-        技术与研究类项目，侧重工程实现与探索。
+        技术与研究类项目，涵盖 AI、3D 视觉与产品工程。
       </p>
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
