@@ -22,7 +22,7 @@ const projects = [
   {
     title: "个人作品集网站",
     summary:
-      "你正在浏览的这个网站——使用 Next.js App Router + Tailwind CSS 构建，部署于 Vercel。",
+      "你正在浏览的这个网站——使用 Next.js App Router + Tailwind CSS 构建，部署于 GitHub Pages。",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     href: "https://github.com/yourprofile/portfolio",
   },
@@ -31,10 +31,10 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div className="mx-auto max-w-5xl px-6 pb-20 pt-16">
-      <h1 className="text-3xl font-bold tracking-tight text-neutral-900">
-        项目
+      <h1 className="text-3xl font-bold tracking-tight">
+        <span className="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">项目</span>
       </h1>
-      <p className="mt-2 text-neutral-600">
+      <p className="mt-3 text-gray-500">
         技术与研究类项目，侧重工程实现与探索。
       </p>
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

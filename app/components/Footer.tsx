@@ -2,18 +2,18 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-neutral-200 bg-neutral-50">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 py-10 text-sm text-neutral-500 sm:flex-row sm:justify-between">
+    <footer className="mt-10 border-t border-white/40">
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 py-10 text-sm text-gray-400 sm:flex-row sm:justify-between">
         <p>&copy; {new Date().getFullYear()} Yanhe Zhu. All rights reserved.</p>
-        <div className="flex gap-5">
-          <a href="mailto:your@email.com" className="hover:text-neutral-900 transition-colors">
+        <div className="flex items-center gap-5">
+          <a href="mailto:your@email.com" className="transition-colors hover:text-purple-500">
             邮箱
           </a>
           <a
             href="https://linkedin.com/in/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neutral-900 transition-colors"
+            className="transition-colors hover:text-purple-500"
           >
             LinkedIn
           </a>
@@ -21,12 +21,12 @@ export default function Footer() {
             href="https://github.com/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neutral-900 transition-colors"
+            className="transition-colors hover:text-purple-500"
           >
             GitHub
           </a>
-          <span className="text-neutral-300">|</span>
-          <Link href="/" className="hover:text-neutral-900 transition-colors">
+          <span className="h-3 w-px bg-gray-300" />
+          <Link href="/" className="transition-colors hover:text-purple-500">
             English (coming soon)
           </Link>
         </div>

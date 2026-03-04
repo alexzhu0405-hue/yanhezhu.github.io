@@ -8,10 +8,10 @@ export const metadata = {
 export default function CasesPage() {
   return (
     <div className="mx-auto max-w-5xl px-6 pb-20 pt-16">
-      <h1 className="text-3xl font-bold tracking-tight text-neutral-900">
-        案例
+      <h1 className="text-3xl font-bold tracking-tight">
+        <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">案例</span>
       </h1>
-      <p className="mt-2 text-neutral-600">
+      <p className="mt-3 text-gray-500">
         以下是我参与或主导的产品案例，涵盖需求洞察、方案设计与数据验证。
       </p>
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
