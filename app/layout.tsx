@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body
-        className={`${inter.variable} ${notoSansSC.variable} antialiased mesh-bg`}
+        className={`${inter.variable} ${notoSansSC.variable} antialiased mesh-bg overflow-x-hidden`}
       >
         <Navbar />
-        <main className="min-h-[calc(100vh-3rem)]">{children}</main>
+        <main className="min-h-[calc(100vh-3rem)] overflow-x-hidden">{children}</main>
         <Footer />
       </body>
     </html>
