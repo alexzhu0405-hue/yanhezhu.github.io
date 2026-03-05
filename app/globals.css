@@ -65,9 +65,9 @@ body {
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.3;
-  animation: orb-float 6s ease-in-out infinite;
+  filter: blur(80px);
+  opacity: 0.2;
+  animation: orb-float 8s ease-in-out infinite;
   pointer-events: none;
 }
 

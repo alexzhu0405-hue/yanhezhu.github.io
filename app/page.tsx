@@ -16,11 +16,11 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-5xl px-6">
       {/* Hero with floating orbs */}
-      <section className="relative pb-20 pt-20 sm:pt-28 overflow-hidden">
+      <section className="relative pb-20 pt-20 sm:pt-28">
         {/* Floating orbs */}
-        <div className="orb orb-1 -top-10 -left-20 h-60 w-60 bg-purple-400" />
-        <div className="orb orb-2 top-20 right-0 h-40 w-40 bg-pink-400" />
-        <div className="orb orb-3 bottom-10 left-1/3 h-48 w-48 bg-blue-400" />
+        <div className="orb orb-1 top-4 left-[5%] h-32 w-32 bg-purple-400" />
+        <div className="orb orb-2 top-24 right-[10%] h-28 w-28 bg-pink-400" />
+        <div className="orb orb-3 bottom-16 left-[40%] h-36 w-36 bg-blue-400" />
 
         <div className="relative">
           <Animate animation="fade-up">
