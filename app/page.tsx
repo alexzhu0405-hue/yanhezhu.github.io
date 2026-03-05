@@ -19,11 +19,9 @@ const stats = [
 
 const timeline = [
   { period: "2026.1 - 至今", title: "杜克大学 IoT 实验室", desc: "AR 记忆智能体：分层语义压缩与两阶段检索架构", color: "bg-blue-500" },
-  { period: "2025.8 - 2027.5", title: "杜克大学 · 机器学习硕士", desc: "GPA 4.0 · ML / 深度学习 / 科技产品管理", color: "bg-purple-500" },
   { period: "2025.2 - 2025.6", title: "深圳传音控股 · 影像开发部", desc: "显示图像质量评估体系 · 高 FPS 测试标准设计", color: "bg-teal-500" },
   { period: "2024.9 - 2025.2", title: "清华大学 AIR 实验室", desc: "自动驾驶 3D 场景重建 · Chamfer Distance 误差降低 35%", color: "bg-pink-500" },
   { period: "2023.7 - 2023.8", title: "江苏交通控股 · 产品设计", desc: "企业级交通监控系统需求分析与交互设计", color: "bg-amber-500" },
-  { period: "2021.9 - 2025.6", title: "重庆大学 · 双学位", desc: "影视摄影 + 计算机科学 · GPA 3.8 · 专排第 1", color: "bg-blue-400" },
 ];
 
 const techStack = [
@@ -71,8 +69,8 @@ export default function Home() {
                   <span className="hero-gradient-text">朱彦和</span>
                 </h1>
                 <p className="mt-1 text-2xl font-light text-slate-400">Yanhe Zhu</p>
-                <p className="mt-3 text-lg text-slate-500">
-                  AI 产品经理 · Duke ECE · 产品 × 技术双视角
+                <p className="mt-3 text-sm text-slate-500">
+                  杜克大学 机器学习硕士 · 重庆大学 计算机科学 + 影视摄影 双学位
                 </p>
               </div>
             </div>
@@ -132,7 +130,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold">
             <span className="hero-gradient-text">时间线</span>
           </h2>
-          <p className="mt-2 text-sm text-slate-500">教育、实习与研究经历</p>
+          <p className="mt-2 text-sm text-slate-500">实习与研究经历</p>
         </Animate>
         <div className="relative mt-8 pl-10">
           <div className="timeline-line" />
