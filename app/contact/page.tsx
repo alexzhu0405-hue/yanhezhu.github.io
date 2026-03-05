@@ -8,21 +8,21 @@ const contacts = [
     value: "1412224226@qq.com",
     href: "mailto:1412224226@qq.com",
     icon: "✉️",
-    color: "from-purple-500 to-indigo-500",
+    color: "bg-blue-500/20",
   },
   {
     label: "LinkedIn",
     value: "linkedin.com/in/yourprofile",
     href: "https://linkedin.com/in/yourprofile",
     icon: "🔗",
-    color: "from-blue-500 to-cyan-500",
+    color: "bg-purple-500/20",
   },
   {
     label: "GitHub",
     value: "github.com/alexzhu0405-hue",
     href: "https://github.com/alexzhu0405-hue",
     icon: "💻",
-    color: "from-pink-500 to-rose-500",
+    color: "bg-teal-500/20",
   },
 ];
 
@@ -30,9 +30,9 @@ export default function ContactPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pb-20 pt-16">
       <h1 className="text-3xl font-bold tracking-tight">
-        <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">联系我</span>
+        <span className="hero-gradient-text">联系我</span>
       </h1>
-      <p className="mt-4 text-gray-500 leading-relaxed">
+      <p className="mt-4 text-slate-500 leading-relaxed">
         如果你对我的经历感兴趣，或有任何合作想法，欢迎通过以下方式联系。
       </p>
 
@@ -43,16 +43,16 @@ export default function ContactPage() {
             href={c.href}
             target={c.href.startsWith("http") ? "_blank" : undefined}
             rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
-            className="group glass flex items-center gap-5 rounded-3xl p-5 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10 hover:scale-[1.02]"
+            className="group glass flex items-center gap-5 rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.5),0_0_20px_rgba(96,165,250,0.1)]"
           >
-            <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${c.color} text-xl shadow-lg`}>
+            <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl ${c.color} text-xl`}>
               {c.icon}
             </div>
             <div>
-              <p className="font-semibold text-gray-900 group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-500 group-hover:bg-clip-text group-hover:text-transparent transition-all">
+              <p className="font-semibold text-slate-200 group-hover:text-blue-400 transition-colors">
                 {c.label}
               </p>
-              <p className="text-sm text-gray-500">{c.value}</p>
+              <p className="text-sm text-slate-500">{c.value}</p>
             </div>
           </a>
         ))}

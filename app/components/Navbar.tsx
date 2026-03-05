@@ -21,22 +21,22 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 glass-strong">
-      <nav className="mx-auto flex h-12 max-w-5xl items-center justify-between px-6">
+      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         <Link
           href="/"
-          className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-lg font-bold tracking-tight text-transparent"
+          className="hero-gradient-text text-lg font-bold tracking-tight"
         >
           朱彦和
         </Link>
-        <ul className="flex gap-0.5">
+        <ul className="flex gap-1">
           {links.map((l) => (
             <li key={l.href}>
               <Link
                 href={l.href}
-                className={`rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-200 ${
+                className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-300 ${
                   isActive(l.href)
-                    ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-sm"
-                    : "text-gray-500 hover:text-gray-900 hover:bg-white/60"
+                    ? "bg-blue-500/20 text-blue-400"
+                    : "text-slate-400 hover:text-slate-200 hover:bg-white/5"
                 }`}
               >
                 {l.label}

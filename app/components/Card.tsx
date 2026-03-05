@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const tagColors = [
-  "bg-purple-100 text-purple-700",
-  "bg-pink-100 text-pink-700",
-  "bg-blue-100 text-blue-700",
-  "bg-teal-100 text-teal-700",
-  "bg-orange-100 text-orange-700",
-  "bg-indigo-100 text-indigo-700",
+  "bg-blue-500/15 text-blue-400",
+  "bg-purple-500/15 text-purple-400",
+  "bg-teal-500/15 text-teal-400",
+  "bg-pink-500/15 text-pink-400",
+  "bg-amber-500/15 text-amber-400",
+  "bg-indigo-500/15 text-indigo-400",
 ];
 
 interface CardProps {
@@ -20,15 +20,14 @@ export default function Card({ href, title, summary, tags }: CardProps) {
   return (
     <Link
       href={href}
-      className="group relative block overflow-hidden rounded-3xl glass p-6 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10 hover:scale-[1.02] hover:-translate-y-1"
+      className="group relative block overflow-hidden rounded-2xl glass p-6 transition-all duration-300 hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.5),0_0_20px_rgba(96,165,250,0.1)] hover:-translate-y-2"
     >
-      {/* Top accent gradient line */}
-      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-      <h3 className="text-lg font-semibold text-gray-900 group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-500 group-hover:bg-clip-text group-hover:text-transparent transition-all">
+      <h3 className="text-lg font-semibold text-slate-100 group-hover:text-blue-400 transition-colors">
         {title}
       </h3>
-      <p className="mt-2 text-sm leading-relaxed text-gray-500">{summary}</p>
+      <p className="mt-2 text-sm leading-relaxed text-slate-400">{summary}</p>
       {tags && tags.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag, i) => (

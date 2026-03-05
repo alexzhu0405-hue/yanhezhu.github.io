@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(sed -i 's/filter: blur\\(60px\\);/filter: blur\\(80px\\);/' app/globals.css)",
+      "Bash(sed -i 's/opacity: 0.3;/opacity: 0.2;/' app/globals.css)",
+      "Bash(sed -i 's/animation: orb-float 6s/animation: orb-float 8s/' app/globals.css)",
+      "WebFetch(domain:lain-ego0.github.io)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}
