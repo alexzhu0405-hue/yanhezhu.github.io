@@ -9,14 +9,9 @@ export default function Footer() {
           <a href="mailto:1412224226@qq.com" className="transition-colors hover:text-blue-400">
             邮箱
           </a>
-          <a
-            href="https://linkedin.com/in/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-colors hover:text-blue-400"
-          >
-            LinkedIn
-          </a>
+          <span className="transition-colors hover:text-blue-400 cursor-default" title="13770313630">
+            微信
+          </span>
           <a
             href="https://github.com/alexzhu0405-hue"
             target="_blank"

@@ -25,16 +25,18 @@ const timeline = [
 ];
 
 const techStack = [
+  { name: "需求分析", color: "bg-blue-500/15 text-blue-400 border-blue-500/20" },
+  { name: "PRD 撰写", color: "bg-teal-500/15 text-teal-400 border-teal-500/20" },
+  { name: "竞品分析", color: "bg-indigo-500/15 text-indigo-400 border-indigo-500/20" },
+  { name: "Figma", color: "bg-pink-500/15 text-pink-400 border-pink-500/20" },
+  { name: "A/B Test", color: "bg-green-500/15 text-green-400 border-green-500/20" },
+  { name: "Vibe Coding", color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/20" },
   { name: "Python", color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/20" },
   { name: "SQL", color: "bg-blue-500/15 text-blue-400 border-blue-500/20" },
   { name: "C++", color: "bg-purple-500/15 text-purple-400 border-purple-500/20" },
-  { name: "React / Next.js", color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/20" },
-  { name: "Figma", color: "bg-pink-500/15 text-pink-400 border-pink-500/20" },
-  { name: "Machine Learning", color: "bg-green-500/15 text-green-400 border-green-500/20" },
-  { name: "LLM / RAG", color: "bg-orange-500/15 text-orange-400 border-orange-500/20" },
-  { name: "Photoshop", color: "bg-indigo-500/15 text-indigo-400 border-indigo-500/20" },
+  { name: "HTML/CSS", color: "bg-orange-500/15 text-orange-400 border-orange-500/20" },
+  { name: "SVG", color: "bg-amber-500/15 text-amber-400 border-amber-500/20" },
   { name: "Blender", color: "bg-amber-500/15 text-amber-400 border-amber-500/20" },
-  { name: "PRD / GTM", color: "bg-teal-500/15 text-teal-400 border-teal-500/20" },
 ];
 
 export default function Home() {
@@ -70,7 +72,7 @@ export default function Home() {
                 </h1>
                 <p className="mt-1 text-2xl font-light text-slate-400">Yanhe Zhu</p>
                 <p className="mt-3 text-sm text-slate-500">
-                  杜克大学 机器学习硕士 · 重庆大学 计算机科学 + 影视摄影 双学位
+                  杜克大学 机器学习与大数据硕士 · 重庆大学 计算机科学 + 影视摄影 双学位
                 </p>
               </div>
             </div>

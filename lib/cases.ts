@@ -15,7 +15,7 @@ export interface CaseStudy {
 export const cases: CaseStudy[] = [
   {
     slug: "ecommerce-repurchase",
-    title: "电商高频刚需品复购决策优化",
+    title: "电商推荐产品 — 高频刚需品复购决策优化",
     summary:
       "拆解用户复购路径，识别「库存焦虑 + 价格波动感知」为核心转化阻力，设计动态提醒阈值机制，以有效复购率为北极星指标建立策略优化闭环。",
     highlights: ["用户路径拆解", "分层策略设计", "A/B Test 闭环"],
